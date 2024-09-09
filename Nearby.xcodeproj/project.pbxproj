@@ -11,7 +11,7 @@
 		865E5D072C89A14C00A59161 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E5D062C89A14C00A59161 /* HTTPClient.swift */; };
 		865E5D092C89A17F00A59161 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E5D082C89A17F00A59161 /* URLSessionHTTPClient.swift */; };
 		865E5D0B2C89A82000A59161 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E5D0A2C89A82000A59161 /* HTTPMethod.swift */; };
-		865E5D0D2C89AC4C00A59161 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E5D0C2C89AC4C00A59161 /* RemoteDataSource.swift */; };
+		865E5D0D2C89AC4C00A59161 /* RemoteDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865E5D0C2C89AC4C00A59161 /* RemoteDataSourceType.swift */; };
 		8691D85D2C89592D000EBC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85C2C89592D000EBC27 /* AppDelegate.swift */; };
 		8691D85F2C89592D000EBC27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85E2C89592D000EBC27 /* SceneDelegate.swift */; };
 		8691D8612C89592D000EBC27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D8602C89592D000EBC27 /* ViewController.swift */; };
@@ -24,7 +24,7 @@
 		865E5D062C89A14C00A59161 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		865E5D082C89A17F00A59161 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		865E5D0A2C89A82000A59161 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		865E5D0C2C89AC4C00A59161 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		865E5D0C2C89AC4C00A59161 /* RemoteDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSourceType.swift; sourceTree = "<group>"; };
 		8691D8592C89592D000EBC27 /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8691D85C2C89592D000EBC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8691D85E2C89592D000EBC27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 				865E5D062C89A14C00A59161 /* HTTPClient.swift */,
 				865E5D082C89A17F00A59161 /* URLSessionHTTPClient.swift */,
 				865E5D0A2C89A82000A59161 /* HTTPMethod.swift */,
-				865E5D0C2C89AC4C00A59161 /* RemoteDataSource.swift */,
+				865E5D0C2C89AC4C00A59161 /* RemoteDataSourceType.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				865E5D0D2C89AC4C00A59161 /* RemoteDataSource.swift in Sources */,
+				865E5D0D2C89AC4C00A59161 /* RemoteDataSourceType.swift in Sources */,
 				8691D8612C89592D000EBC27 /* ViewController.swift in Sources */,
 				865E5D072C89A14C00A59161 /* HTTPClient.swift in Sources */,
 				865E5D0B2C89A82000A59161 /* HTTPMethod.swift in Sources */,

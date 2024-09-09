@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol RemoteDataSource {
+public protocol RemoteDataSourceType {
     func createRequest<ResponseBody: Decodable>(
         _ endpoint: RemoteAPIEndpoint,
         for type: ResponseBody.Type
@@ -13,7 +13,7 @@ public protocol RemoteAPIEndpoint {
     var body: [String: Any]? { get }
 }
 
-public struct StandardRemoteDataSource: RemoteDataSource {
+public struct RemoteDataSource: RemoteDataSourceType {
     
     private let httpClient: URLSessionHTTPClient
     

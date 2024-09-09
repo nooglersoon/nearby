@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         // Implementation
 
-        let remoteDataSource: RemoteDataSource = StandardRemoteDataSource()
+        let remoteDataSource: RemoteDataSourceType = RemoteDataSource()
 
         Task {
             do {
