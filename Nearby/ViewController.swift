@@ -1,4 +1,5 @@
 import UIKit
+import NetworkService
 
 struct NumberAPIResponse: Codable {
     let text: String?
