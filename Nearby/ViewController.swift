@@ -8,7 +8,7 @@ struct NumberAPIResponse: Codable {
     let type, date: String?
 }
 
-enum NumberAPIEndpoint: RemoteAPIEndpoint {
+enum NumberAPIEndpoint: RemoteAPISetup {
     
     case randomYear
     
@@ -16,12 +16,20 @@ enum NumberAPIEndpoint: RemoteAPIEndpoint {
         .get
     }
     
-    var path: String {
-        return "http://numbersapi.com/random111/year?json"
+    var baseURL: URL {
+        URL(string: "http://numbersapi.com")!
     }
     
-    var body: [String : Any]? {
-        return nil
+    var endpoint: String {
+        "/random/year?json"
+    }
+    
+    var headers: HTTPHeaders {
+        [:]
+    }
+    
+    var parameters: HTTPParameters {
+        [:]
     }
     
     
