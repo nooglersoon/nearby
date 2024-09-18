@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8601B3302C9ACE5E00024611 /* BaseUIKit in Resources */ = {isa = PBXBuildFile; fileRef = 8601B32F2C9ACE5E00024611 /* BaseUIKit */; };
 		865E5D122C8E974400A59161 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 865E5D112C8E974400A59161 /* NetworkService */; };
 		8691D85D2C89592D000EBC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85C2C89592D000EBC27 /* AppDelegate.swift */; };
 		8691D85F2C89592D000EBC27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85E2C89592D000EBC27 /* SceneDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8601B32F2C9ACE5E00024611 /* BaseUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BaseUIKit; sourceTree = "<group>"; };
 		865E5D132C8E987000A59161 /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkService; sourceTree = SOURCE_ROOT; };
 		8691D8592C89592D000EBC27 /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8691D85C2C89592D000EBC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		865E5D142C8E98CB00A59161 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				8601B32F2C9ACE5E00024611 /* BaseUIKit */,
 				865E5D132C8E987000A59161 /* NetworkService */,
 			);
 			name = Packages;
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8691D8692C895930000EBC27 /* LaunchScreen.storyboard in Resources */,
+				8601B3302C9ACE5E00024611 /* BaseUIKit in Resources */,
 				8691D8662C895930000EBC27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

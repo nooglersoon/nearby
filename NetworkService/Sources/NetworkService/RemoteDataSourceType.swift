@@ -15,7 +15,10 @@ public struct RemoteDataSource: RemoteDataSourceType {
         self.httpClient = URLSessionHTTPClient()
     }
     
-    public func createRequest<ResponseBody: Decodable>(_ endpoint: RemoteAPISetup, for type: ResponseBody.Type) async throws -> ResponseBody {
+    public func createRequest<ResponseBody: Decodable>(
+        _ endpoint: RemoteAPISetup,
+        for type: ResponseBody.Type
+    ) async throws -> ResponseBody {
         try await executeRequest(endpoint, for: type)
     }
     
