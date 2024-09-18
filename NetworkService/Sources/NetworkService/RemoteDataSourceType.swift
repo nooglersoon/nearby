@@ -34,8 +34,6 @@ public struct RemoteDataSource: RemoteDataSourceType {
                 .execute(with: urlRequest, for: type)
                 .get()
             
-            // TODO: Invoke the response for logging
-            
             guard let responseBody else {
                 throw URLError(.unknown)
             }
