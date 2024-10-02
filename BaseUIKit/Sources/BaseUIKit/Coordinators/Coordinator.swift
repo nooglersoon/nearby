@@ -2,6 +2,10 @@ import Foundation
 import UIKit
 
 public protocol Coordinator: AnyObject {
+    
+    /// To check whether the coordinator is a child (will have parentCoordinator) or a parent (parentCoordinator is nil)
+    var parentCoordinator: Coordinator? { get set }
+    
     /// The navigation controller for the coordinator
     var navigationController: UINavigationController { get set }
     
@@ -12,6 +16,9 @@ public protocol Coordinator: AnyObject {
      
      */
     func start(animated: Bool)
+    
+    /// Each Coordinator can have its own children coordinators
+    var childCoordinators: [Coordinator] { get set }
     
     /**
      Pops out the active View Controller from the navigation stack.
@@ -55,7 +62,7 @@ public protocol Coordinator: AnyObject {
     
 }
 
-extension Coordinator {
+public extension Coordinator {
     
     func popViewController(animated: Bool) {
         navigationController.popViewController(animated: animated)

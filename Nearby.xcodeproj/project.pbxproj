@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8601B3302C9ACE5E00024611 /* BaseUIKit in Resources */ = {isa = PBXBuildFile; fileRef = 8601B32F2C9ACE5E00024611 /* BaseUIKit */; };
+		8607AC672CAC03500075CBE0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AC662CAC03500075CBE0 /* MainCoordinator.swift */; };
+		8607AC6A2CAC03A70075CBE0 /* BaseUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8607AC692CAC03A70075CBE0 /* BaseUIKit */; };
+		8607AC6C2CAC11730075CBE0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AC6B2CAC11730075CBE0 /* MainViewController.swift */; };
 		865E5D122C8E974400A59161 /* NetworkService in Frameworks */ = {isa = PBXBuildFile; productRef = 865E5D112C8E974400A59161 /* NetworkService */; };
 		8691D85D2C89592D000EBC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85C2C89592D000EBC27 /* AppDelegate.swift */; };
 		8691D85F2C89592D000EBC27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8691D85E2C89592D000EBC27 /* SceneDelegate.swift */; };
@@ -18,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		8601B32F2C9ACE5E00024611 /* BaseUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BaseUIKit; sourceTree = "<group>"; };
+		8607AC662CAC03500075CBE0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		8607AC6B2CAC11730075CBE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		865E5D132C8E987000A59161 /* NetworkService */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkService; sourceTree = SOURCE_ROOT; };
 		8691D8592C89592D000EBC27 /* Nearby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nearby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8691D85C2C89592D000EBC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8607AC6A2CAC03A70075CBE0 /* BaseUIKit in Frameworks */,
 				865E5D122C8E974400A59161 /* NetworkService in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +46,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8607AC682CAC03A70075CBE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		865E5D142C8E98CB00A59161 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +68,7 @@
 				865E5D142C8E98CB00A59161 /* Packages */,
 				8691D85B2C89592D000EBC27 /* Nearby */,
 				8691D85A2C89592D000EBC27 /* Products */,
+				8607AC682CAC03A70075CBE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +89,8 @@
 				8691D8652C895930000EBC27 /* Assets.xcassets */,
 				8691D8672C895930000EBC27 /* LaunchScreen.storyboard */,
 				8691D86A2C895930000EBC27 /* Info.plist */,
+				8607AC662CAC03500075CBE0 /* MainCoordinator.swift */,
+				8607AC6B2CAC11730075CBE0 /* MainViewController.swift */,
 			);
 			path = Nearby;
 			sourceTree = "<group>";
@@ -97,6 +113,7 @@
 			name = Nearby;
 			packageProductDependencies = (
 				865E5D112C8E974400A59161 /* NetworkService */,
+				8607AC692CAC03A70075CBE0 /* BaseUIKit */,
 			);
 			productName = Nearby;
 			productReference = 8691D8592C89592D000EBC27 /* Nearby.app */;
@@ -155,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8607AC672CAC03500075CBE0 /* MainCoordinator.swift in Sources */,
 				8691D8612C89592D000EBC27 /* ViewController.swift in Sources */,
 				8691D85D2C89592D000EBC27 /* AppDelegate.swift in Sources */,
 				8691D85F2C89592D000EBC27 /* SceneDelegate.swift in Sources */,
+				8607AC6C2CAC11730075CBE0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +397,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8607AC692CAC03A70075CBE0 /* BaseUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BaseUIKit;
+		};
 		865E5D112C8E974400A59161 /* NetworkService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NetworkService;
