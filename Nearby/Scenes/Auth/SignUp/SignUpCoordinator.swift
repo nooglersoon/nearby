@@ -14,7 +14,7 @@ final class SignUpCoordinator: Coordinator {
     func start(animated: Bool) {
         let signUpViewController = SignUpViewController()
         signUpViewController.coordinator = self
-        navigationController.pushViewController(signUpViewController, animated: true)
+        self.pushViewController(to: signUpViewController, animated: true)
     }
     
     func goToLogin() {

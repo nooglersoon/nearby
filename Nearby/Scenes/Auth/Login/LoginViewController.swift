@@ -20,9 +20,8 @@ final class LoginViewController: BaseViewController {
         return button
     }()
     
-    init(coordinator: LoginCoordinator? = nil) {
+    init() {
         super.init(nibName: nil, bundle: nil)
-        self.coordinator = coordinator
     }
     
     required init?(coder: NSCoder) {

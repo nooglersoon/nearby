@@ -12,7 +12,8 @@ final class LoginCoordinator: Coordinator {
     }
     
     func start(animated: Bool) {
-        let loginViewController = LoginViewController(coordinator: self)
-        self.navigationController.pushViewController(loginViewController, animated: animated)
+        let loginViewController = LoginViewController()
+        loginViewController.coordinator = self
+        self.pushViewController(to: loginViewController, animated: animated)
     }
 }
