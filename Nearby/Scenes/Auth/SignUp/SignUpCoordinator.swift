@@ -2,6 +2,11 @@ import BaseUIKit
 import UIKit
 import Foundation
 
+enum SignUpNavigation {
+    case login
+    case forgotPassword
+}
+
 final class SignUpCoordinator: Coordinator {
     var parentCoordinator: Coordinator?
     var childCoordinators: [Coordinator] = []
@@ -17,9 +22,22 @@ final class SignUpCoordinator: Coordinator {
         self.pushViewController(to: signUpViewController, animated: true)
     }
     
-    func goToLogin() {
-        let loginCoordinator = LoginCoordinator(navigationController: navigationController)
-        childCoordinators.append(loginCoordinator)  // Retain the loginCoordinator
-        loginCoordinator.start(animated: true)
+    func navigate(to navigation: SignUpNavigation) {
+        switch navigation {
+        case .login:
+            let coordinator = LoginCoordinator(navigationController: navigationController)
+            coordinator.parentCoordinator = self
+            childCoordinators.append(coordinator)
+            coordinator.start(animated: true)
+            
+        case .forgotPassword:
+            if !childCoordinators.isEmpty {
+                self.popToRoot(animated: true)
+            }
+            let coordinator = ForgotPasswordCoordinator(navigationController: navigationController)
+            coordinator.parentCoordinator = self
+            childCoordinators.append(coordinator)
+            coordinator.start(animated: true)
+        }
     }
 }

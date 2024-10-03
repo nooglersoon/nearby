@@ -11,6 +11,8 @@
 		019711502CAE595D00563E03 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0197114F2CAE595500563E03 /* SignUpCoordinator.swift */; };
 		019711522CAE5A6000563E03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019711512CAE5A5C00563E03 /* LoginViewController.swift */; };
 		019711542CAE6F7600563E03 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019711532CAE6F7300563E03 /* LoginCoordinator.swift */; };
+		019711572CAF0C6600563E03 /* ForgotPasswordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019711562CAF0C6600563E03 /* ForgotPasswordCoordinator.swift */; };
+		019711592CAF0C9000563E03 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019711582CAF0C9000563E03 /* ForgotPasswordViewController.swift */; };
 		8601B3302C9ACE5E00024611 /* BaseUIKit in Resources */ = {isa = PBXBuildFile; fileRef = 8601B32F2C9ACE5E00024611 /* BaseUIKit */; };
 		8607AC672CAC03500075CBE0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607AC662CAC03500075CBE0 /* MainCoordinator.swift */; };
 		8607AC6A2CAC03A70075CBE0 /* BaseUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8607AC692CAC03A70075CBE0 /* BaseUIKit */; };
@@ -28,6 +30,8 @@
 		0197114F2CAE595500563E03 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		019711512CAE5A5C00563E03 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		019711532CAE6F7300563E03 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		019711562CAF0C6600563E03 /* ForgotPasswordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCoordinator.swift; sourceTree = "<group>"; };
+		019711582CAF0C9000563E03 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		8601B32F2C9ACE5E00024611 /* BaseUIKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BaseUIKit; sourceTree = "<group>"; };
 		8607AC662CAC03500075CBE0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		8607AC6B2CAC11730075CBE0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 		0197114B2CAE592200563E03 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				019711552CAF0C2900563E03 /* ForgotPassword */,
 				0197114E2CAE594D00563E03 /* Login */,
 				0197114D2CAE593F00563E03 /* SignUp */,
 			);
@@ -95,6 +100,15 @@
 				019711512CAE5A5C00563E03 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		019711552CAF0C2900563E03 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				019711582CAF0C9000563E03 /* ForgotPasswordViewController.swift */,
+				019711562CAF0C6600563E03 /* ForgotPasswordCoordinator.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		8607AC682CAC03A70075CBE0 /* Frameworks */ = {
@@ -226,6 +240,7 @@
 			files = (
 				0197114A2CAE591E00563E03 /* SignUpViewController.swift in Sources */,
 				019711502CAE595D00563E03 /* SignUpCoordinator.swift in Sources */,
+				019711572CAF0C6600563E03 /* ForgotPasswordCoordinator.swift in Sources */,
 				8607AC672CAC03500075CBE0 /* MainCoordinator.swift in Sources */,
 				8691D8612C89592D000EBC27 /* ViewController.swift in Sources */,
 				019711522CAE5A6000563E03 /* LoginViewController.swift in Sources */,
@@ -233,6 +248,7 @@
 				019711542CAE6F7600563E03 /* LoginCoordinator.swift in Sources */,
 				8691D85F2C89592D000EBC27 /* SceneDelegate.swift in Sources */,
 				8607AC6C2CAC11730075CBE0 /* MainViewController.swift in Sources */,
+				019711592CAF0C9000563E03 /* ForgotPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

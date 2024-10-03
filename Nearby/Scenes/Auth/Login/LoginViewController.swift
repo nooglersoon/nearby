@@ -1,7 +1,8 @@
 import UIKit
-import BaseUIKit
 
-final class LoginViewController: BaseViewController {
+final class LoginViewController: UIViewController {
+    
+    weak var coordinator: LoginCoordinator?
     
     private let pageTitle: UILabel = {
         let label = UILabel()
@@ -42,12 +43,16 @@ final class LoginViewController: BaseViewController {
             button.topAnchor.constraint(equalTo: pageTitle.bottomAnchor, constant: 100)
         ])
         
-        button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(forgotPasswordTapped), for: .touchUpInside)
         
     }
     
-    @objc private func loginTapped() {
-        // Go Home
+    deinit {
+        coordinator?.childDidFinish(coordinator)
+    }
+    
+    @objc private func forgotPasswordTapped() {
+        coordinator?.goToForgotPassword()
     }
     
 }

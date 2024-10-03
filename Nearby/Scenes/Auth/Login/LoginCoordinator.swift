@@ -16,4 +16,9 @@ final class LoginCoordinator: Coordinator {
         loginViewController.coordinator = self
         self.pushViewController(to: loginViewController, animated: animated)
     }
+    
+    func goToForgotPassword() {
+        guard let parentCoordinator = parentCoordinator as? SignUpCoordinator else { return }
+        parentCoordinator.navigate(to: .forgotPassword)
+    }
 }
