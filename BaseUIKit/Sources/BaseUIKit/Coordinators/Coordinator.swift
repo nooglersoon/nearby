@@ -17,6 +17,9 @@ public protocol Coordinator: AnyObject {
      */
     func start(animated: Bool)
     
+    /// Optionally remove child coordinators when their flow ends
+    func childDidFinish(_ child: Coordinator?)
+    
     /// Each Coordinator can have its own children coordinators
     var childCoordinators: [Coordinator] { get set }
     
@@ -63,6 +66,13 @@ public protocol Coordinator: AnyObject {
 }
 
 public extension Coordinator {
+    
+    func childDidFinish(_ child: Coordinator?) {
+        print("Did finish child: \(String(describing: childCoordinators))")
+        if let index = childCoordinators.firstIndex(where: { $0 === child }) {
+            childCoordinators.remove(at: index)
+        }
+    }
     
     func popViewController(animated: Bool) {
         navigationController.popViewController(animated: animated)
